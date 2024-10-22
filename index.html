@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>illy + otter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7efe4;
+            color: #4e4e4e;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #c19a6b;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        /* About Them Section */
+        .about-section {
+            background: linear-gradient(135deg, #f2e1c1, #f7efe4);
+            padding: 60px;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h1 {
+            color: #a67145;
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Gallery Section */
+        .gallery-title {
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #b05c3c;
+            margin-bottom: 30px;
+        }
+
+        /* Image Container with Hover Effect */
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Overlay Text */
+        .image-container .overlay-text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container:hover .overlay-text {
+            opacity: 1;
+        }
+
+        .gallery .col-md-4 {
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #c19a6b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">illy + otter</a>
+        </div>
+    </nav>
+
+    <!-- About Them Section -->
+    <div class="container about-section">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>About illy + otter</h1>
+                <p>
+                    Illy and Otter met in the summer of 2023 on [redacted]. Otter somehow liked illy, even though she's a bit weird, and by pure luck he's still around. Illy thinks coding class is boring so she decided to make a quick gallery of some fun memories. If you're reading this, chances are Otter is on Illy's mind. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galleries Section -->
+    <div class="container">
+
+        <!-- Fall 2024 Gallery -->
+        <div class="row gallery">
+            <h2 class="gallery-title">Fall 2024</h2>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="barcelona.jpeg" alt="Fall 2024 - 1">
+                    <div class="overlay-text">Otter was the most handsome person in the ENTIRE restaurant. I was a lucky gal with this view. Did you know Otter lived in Spain briefly?</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="apple.jpeg" alt="Fall 2024 - 2">
+                    <div class="overlay-text">Have you ever experienced something straight out of a romance movie in real life? That happens to be me whenever otter and I do things like go on dates at sunset.</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="drive.jpeg" alt="Fall 2024 - 3">
+                    <div class="overlay-text">Otter drove me around in a red car all weekend. It was loud but my thoughts about him when he looked at me like this were even louder.</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="illy.jpeg" alt="Fall 2024 - 4">
+                    <div class="overlay-text"> <a href="https://www.youtube.com/watch?v=Yr8xDSPjII8" target="_blank">The Look</a> .</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="bigfoot.jpeg" alt="Fall 2024 - 5">
+                    <div class="overlay-text">The mystic otter is a beast some nashville travelers say they spot in the dark shadows of luxury germantown apartments. You'll find this mythical creature in Victoria's Secret silk and lace. He's got a knack for stealing cellular devices, so clutch your purses and other belongings tight!</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="sonic.jpeg" alt="Fall 2024 - 6">
+                    <div class="overlay-text">He got my order wrong but he's so cute it didn't even matter.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summer 2023 Gallery -->
+        <div class="row gallery">
+            <h2 class="gallery-title">Summer 2023</h2>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="dolly.jpeg" alt="Summer 2023 - 1">
+                    <div class="overlay-text">Once upon a time otter had long hair!</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="cook.jpeg" alt="Summer 2023 - 2">
+                    <div class="overlay-text">Otter and I's trip to the lake is something I'll never forget! Especially this yum sausage pasta he made me.</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="bed.jpeg" alt="Summer 2023 - 3">
+                    <div class="overlay-text">I don't want to sleep unless it is with this crazy dude pictured above.</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="disc.jpeg" alt="Summer 2023 - 4">
+                    <div class="overlay-text">I really tried to find a photo of Otter disc golfing that wasn't sassy, but those fortunately don't exist. We kissed a lot on the course. Either disc golf makes me feel romantic or Otter and I have crazy chemistry.</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="love.jpeg" alt="Summer 2023 - 5">
+                    <div class="overlay-text">Sometimes I wonder when Otter fell in love with me. Did the chocolate on my lips from the Prince Polo make him fall?</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container">
+                    <img src="cry.jpeg" alt="Summer 2023 - 6">
+                    <div class="overlay-text">This is illy whenever otter leaves or she leaves. It's never fun. And she always cries. But she knows she'll always see him again and feel the butterflies tenfold.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>With Love, illy 2 otter ♥</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
